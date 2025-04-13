@@ -40,13 +40,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     $mail->Host = 'smtp.gmail.com'; // SMTP server
     //     $mail->SMTPAuth = true;
 
-    //     $mail->Username = "atharvkadam001@gmail.com"; // Email
-    //     $mail->Password = "tnvc jmmj dygm hiyr";  // Password
+    //     $mail->Username = "example@gmail.com"; // Email
+    //     $mail->Password = "PASS";  // Password
     //     $mail->SMTPSecure = 'tls';
     //     $mail->Port = 587;
 
     //     // Email Content
-    //     $mail->setFrom("atharvkadam001@gmail.com", 'Atharv Kadam');
+    //     $mail->setFrom("example@gmail.com", 'Atharv Kadam');
     //     $mail->addAddress($email); // Sends email to the user
     //     $mail->Subject = "Thank You for Your Submission";
     //     $mail->Body = "Hello $name,\n\nYour Appointment is Booked.!";
