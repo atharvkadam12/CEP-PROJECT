@@ -1,6 +1,6 @@
 <?php
 
-$correct_password = "abcd";
+$correct_password = "PASS";
 
 if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         // If the password is not set (or incorrect), display the password prompt
