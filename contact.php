@@ -132,8 +132,6 @@
             document.getElementById("email").value="";
             document.getElementById("comment").value="";
             alert("Thank you For you submission, we will soon connect with you.");
-            // .then(data => alert(data.message))
-            // .catch(error => console.error("Error:", error));
         });
     </script>
 </body>
