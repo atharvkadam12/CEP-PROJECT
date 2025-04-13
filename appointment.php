@@ -1,8 +1,32 @@
 <!DOCTYPE php>
 <php lang="zxx">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gym Template">
+    <meta name="keywords" content="Gym, unica, creative, php">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
 <!-- Appointment Section Begin -->
-<section class="contact-section spad appointSection animate" id="Apsection" style="width:100vw;justify-content:center;background:none;padding-top:20px;padding-bottom:200px;">
+<section class="contact-section spad appointSection animate" id="Apsection" style="width:100vw;justify-content:center;background:none;padding-bottom:200px;">
         <div class="appointContainer">
             <div style="width:100%;display:flex;justify-content:flex-end;"><button id="exit-but"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -43,8 +67,7 @@
                         <form id="appointmentform">
                             <input type="text" id="name" name="name" placeholder="Name" required>
                             <input type="email" id="email" name="email" placeholder="Email" required>
-                            <input type="tel" id="phone" name="phone" placeholder="+91 234 567 890" pattern="^\+?[0-9]{10,15}$"  required>
-                            <p>By submitting this form, I confirm that I have read, understood, and agree to the policy and the Terms & Conditions. I consent to the collection and processing of my personal data in accordance with the Privacy Policy. I understand that my information may be used for appointment scheduling.</p>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 234 567 890" pattern="^[0-9]{10}$"  required>
                             <button type="submit" class="appoint-button" >Submit</button>
                         </form>
                         </div>
@@ -56,5 +79,21 @@
         
     </section>
     <!-- Appointment Section End -->
+    <script>
+        document.getElementById("appointmentform").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
 
+            fetch("send_appointment.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            document.getElementById("name").value = "";
+            document.getElementById("email").value="";
+            document.getElementById("phone").value="";
+            alert("Thank you For you submission, we will soon connect with you.");
+        });
+    </script>
+</body>
 </php>

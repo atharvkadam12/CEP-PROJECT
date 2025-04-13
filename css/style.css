@@ -1070,14 +1070,9 @@ ol {
 }
 
 .ps-item:hover {
+	background-color:rgb(83, 39, 0);
 	border: 1px solid rgb(255, 123, 0);
 }
-
-
-
-
-
-
 
 .ps-item .primary-btn.pricing-btn {
 	display: block;
@@ -1918,7 +1913,6 @@ ol {
 
 .ss-pic img {
 	background-color:white;
-	padding:15px;
 	height: 100%;
 	min-width: 100%;
 }

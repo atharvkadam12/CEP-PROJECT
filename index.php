@@ -94,7 +94,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
                         <span class="flaticon-002-dumbell"></span>
-                        <h4>Proffesponal training plan</h4>
+                        <h4>Professional training plan</h4>
                         <p>Expert-designed training programs tailored to your goals, guided by certified professionals.</p>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="class-item">
                         <div class="ci-pic">
-                            <img src="img/classes/class-1.jpg" alt="">
+                            <img src="img/classes/kickBoxing-img.jpg" alt="">
                         </div>
                         <div class="ci-text">
                             <span>STRENGTH</span>
@@ -137,7 +137,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="class-item">
                         <div class="ci-pic">
-                            <img src="img/classes/class-2.jpg" alt="">
+                            <img src="img/classes/cardio-img.jpg" alt="">
                         </div>
                         <div class="ci-text">
                             <span>Cardio</span>

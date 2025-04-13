@@ -122,18 +122,20 @@
             event.preventDefault();
 
             const formData = new FormData(this);
-
+            console.log("Hello");
             fetch("send_email.php", {
                 method: "POST",
                 body: formData
             })
             .then(response => response.json())
-            .then(data => alert(data.message))
-            .catch(error => console.error("Error:", error));
+            document.getElementById("name").value = "";
+            document.getElementById("email").value="";
+            document.getElementById("comment").value="";
+            alert("Thank you For you submission, we will soon connect with you.");
+            // .then(data => alert(data.message))
+            // .catch(error => console.error("Error:", error));
         });
     </script>
-
-
 </body>
 
 </php>

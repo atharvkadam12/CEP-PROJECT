@@ -30,10 +30,10 @@
       height: 150px;
     }
 
-    svg {
+    /* svg {
       width: 100%;
       height: 100%;
-    }
+    } */
 
     .needle {
       position: absolute;
