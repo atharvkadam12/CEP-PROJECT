@@ -1,1 +1,32 @@
 .env
+# Node modules (if any)
+node_modules/
+# OS generated files
+.DS_Store
+Thumbs.db
+# Log files
+*.log
+# Composer dependencies
+vendor/
+# PHPMailer master folder
+PHPMailer-master/
+# IDE and editor folders
+.vscode/
+.idea/
+# Cache and temp files
+*.cache
+*.tmp
+~$*
+# Build output
+dist/
+build/
+# Misc
+*.bak
+*.swp
+*.swo
+# Fonts (if not needed in VCS)
+fonts/
+# Images (if not needed in VCS)
+img/
+# PHPMailer (if using as dependency, not source)
+PHPMailer/
