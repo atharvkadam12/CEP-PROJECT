@@ -357,7 +357,6 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
 	padding-bottom: 50px;
 }
 
@@ -3219,7 +3218,7 @@ ol {
 	}
 }
 #Apsection{
-	position:fixed;
+	position:absolute;
 	top:0;
 	z-index: 1000;
 }
@@ -3228,8 +3227,6 @@ ol {
 	background-color:white;
 	width:50%;
 	padding:20px;
-	position:relative;
-	left:25%;
 	border-radius:20px;
 }
 
