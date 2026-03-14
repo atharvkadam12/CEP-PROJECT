@@ -9,11 +9,24 @@ router.post("/book", (req, res) => {
 
   db.query(sql, [name, email, phone], (err, result) => {
     if (err) {
-      res.status(500).send(err);
+      res.status(500).json({ success: false, message: "Error booking appointment" });
       return;
     }
 
-    res.send("Appointment booked successfully");
+    res.json({ success: true, message: "Appointment booked successfully" });
+  });
+});
+
+router.get("/appointments", (req, res) => {
+  const sql = "SELECT * FROM appointments";
+  
+  db.query(sql, (err, result) => {
+    if (err) {
+      res.status(500).send(err);
+      return;
+    }
+    
+    res.json(result);
   });
 });
 
